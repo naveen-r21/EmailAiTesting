@@ -1,0 +1,63 @@
+
+Test Report for Email: test_20250503140932_5310
+===============================================
+
+Email Content:
+-------------
+
+    Hi Emi, I was able to talk with Agent Jennifer and she said that they were open till 5pm tomorrow 
+    for furnished house. So 1pm should be comfortable enough for me. Let's meet at the shuttle bus stop 
+    like we usually do tomorrow at 1pm. I will also provide you a signed copy of the lease agreements 
+    once I get the chance. Thanks, Saaem
+    
+
+Overall Results:
+--------------
+Sentiment: PASS (Expected: positive, Got: positive)
+Summary: FAIL
+Events: FAIL
+
+Event Details:
+------------
+
+Event 0:
+  Event name: FAIL (Expected: Meeting with Jennifer, Got: Not found)
+  Date: FAIL (Expected: 2025-05-27, Got: Not found)
+  Time: FAIL (Expected: 14:00, Got: Not found)
+  Property Type: FAIL (Expected: unfurnished, Got: Not found)
+  Agent Name: FAIL (Expected: Jennifer, Got: Not found)
+  Location: FAIL (Expected: cafe, Got: Not found)
+
+Ground Truth Events:
+-----------------
+[
+  {
+    "Event name": "Meeting with Jennifer",
+    "Date": "2025-05-27",
+    "Time": "14:00",
+    "Property Type": "unfurnished",
+    "Agent Name": "Jennifer",
+    "Location": "cafe"
+  }
+]
+
+Predicted Events:
+--------------
+[
+  {
+    "Event name": "Meeting with Emi",
+    "Date": "2025-05-04",
+    "Time": "1pm",
+    "Property Type": "furnished",
+    "Agent Name": "Jennifer",
+    "Location": "shuttle bus stop"
+  }
+]
+
+Ground Truth Summary:
+-----------------
+Meeting with Jennifer at cafe on 2025-05-27 at 14:00.
+
+Predicted Summary:
+--------------
+Saaem confirmed a meeting with Emi at the shuttle bus stop tomorrow at 1pm to discuss a furnished house. He will also provide a signed copy of the lease agreements during this meeting.

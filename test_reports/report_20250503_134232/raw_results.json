@@ -1,0 +1,4903 @@
+{
+  "sentiment_metrics": {
+    "accuracy": 0.3333333333333333,
+    "precision": 0.1111111111111111,
+    "recall": 0.3333333333333333,
+    "f1_score": 0.16666666666666666
+  },
+  "event_metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0
+  },
+  "summary_metrics": {
+    "bleu_score": 8.73919853780879e-232,
+    "bleu_score_std": 0.0
+  },
+  "overall_metrics": {
+    "overall_score": 0.06666666666666667,
+    "sentiment_f1": 0.16666666666666666,
+    "event_f1": 0,
+    "summary_bleu": 8.73919853780879e-232
+  },
+  "per_key_metrics": {
+    "per_key_percent": {
+      "Sentiment analysis": 100.0,
+      "overall_sentiment_analysis": 100.0,
+      "feature": 100.0,
+      "category": 100.0,
+      "Summary": 100.0,
+      "Events": 0.0,
+      "mail_id": 100.0
+    },
+    "per_event_key_percent": {
+      "Event name": 0.0,
+      "Date": 0.0,
+      "Time": 0.0,
+      "Property Type": 0.0,
+      "Agent Name": 0.0,
+      "Location": 0.0
+    },
+    "overall_accuracy": 46.15384615384615,
+    "overall_precision": 46.15384615384615,
+    "overall_recall": 46.15384615384615,
+    "overall_f1": 46.15384615384615
+  },
+  "test_data": [
+    {
+      "mail_id": "test_20250503134232_9941",
+      "file_name": [],
+      "email": "test3219@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Thank you for your help with property viewing at property site on 2025-05-20 at 10:00\n\n",
+      "thread_id": "thread_4156_8769",
+      "mail_summary": "Meeting with Emily at property site on 2025-05-20 at 10:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-20",
+          "Time": "10:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Emily",
+          "Location": "property site"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_5556",
+      "file_name": [],
+      "email": "test1444@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm really looking forward to property viewing at property site on 2025-05-17 at 11:00\n\n",
+      "thread_id": "thread_8803_7523",
+      "mail_summary": "Meeting with David at property site on 2025-05-17 at 11:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-17",
+          "Time": "11:00",
+          "Property Type": "apartment",
+          "Agent Name": "David",
+          "Location": "property site"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_9505",
+      "file_name": [],
+      "email": "test9893@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm really looking forward to meeting with Jennifer at property site on 2025-05-31 at 16:00\n\n",
+      "thread_id": "thread_8136_1502",
+      "mail_summary": "Meeting with Jennifer at property site on 2025-05-31 at 16:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-31",
+          "Time": "16:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "property site"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_6596",
+      "file_name": [],
+      "email": "test9675@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm really looking forward to property viewing at office on 2025-05-29 at 9:00\n\n",
+      "thread_id": "thread_1386_7650",
+      "mail_summary": "Meeting with David at office on 2025-05-29 at 9:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-29",
+          "Time": "9:00",
+          "Property Type": "commercial",
+          "Agent Name": "David",
+          "Location": "office"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_1145",
+      "file_name": [],
+      "email": "test8199@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm really looking forward to discussion about unfurnished with Jennifer on 2025-05-24\n\n",
+      "thread_id": "thread_9828_8382",
+      "mail_summary": "Meeting with Jennifer at virtual meeting on 2025-05-24 at 16:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-24",
+          "Time": "16:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Jennifer",
+          "Location": "virtual meeting"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_3128",
+      "file_name": [],
+      "email": "test7892@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm really looking forward to discussion about apartment with Michael on 2025-05-12\n\n",
+      "thread_id": "thread_5805_5409",
+      "mail_summary": "Meeting with Michael at cafe on 2025-05-12 at 16:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-12",
+          "Time": "16:00",
+          "Property Type": "apartment",
+          "Agent Name": "Michael",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_3877",
+      "file_name": [],
+      "email": "test8907@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Great news! I'm excited to share that discussion about commercial with Michael on 2025-05-09\n\n",
+      "thread_id": "thread_6023_4303",
+      "mail_summary": "Meeting with Michael at shuttle bus stop on 2025-05-09 at 10:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-09",
+          "Time": "10:00",
+          "Property Type": "commercial",
+          "Agent Name": "Michael",
+          "Location": "shuttle bus stop"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_2885",
+      "file_name": [],
+      "email": "test5481@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Great news! I'm excited to share that property viewing at cafe on 2025-05-05 at 17:00\n\n",
+      "thread_id": "thread_9168_3775",
+      "mail_summary": "Meeting with Emily at cafe on 2025-05-05 at 17:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-05",
+          "Time": "17:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Emily",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_4933",
+      "file_name": [],
+      "email": "test7351@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Thank you for your help with meeting with Michael at cafe on 2025-05-26 at 14:00\n\n",
+      "thread_id": "thread_8362_8938",
+      "mail_summary": "Meeting with Michael at cafe on 2025-05-26 at 14:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-26",
+          "Time": "14:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Michael",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_3928",
+      "file_name": [],
+      "email": "test5612@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Thank you for your help with meeting with Michael at property site on 2025-05-25 at 9:00\n\n",
+      "thread_id": "thread_3807_9957",
+      "mail_summary": "Meeting with Michael at property site on 2025-05-25 at 9:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-25",
+          "Time": "9:00",
+          "Property Type": "residential",
+          "Agent Name": "Michael",
+          "Location": "property site"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_4108",
+      "file_name": [],
+      "email": "test7459@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Thank you for your help with meeting with Sarah at office on 2025-05-31 at 16:00\n\n",
+      "thread_id": "thread_1646_3224",
+      "mail_summary": "Meeting with Sarah at office on 2025-05-31 at 16:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-31",
+          "Time": "16:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Sarah",
+          "Location": "office"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_1248",
+      "file_name": [],
+      "email": "test3492@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm really looking forward to meeting with David at property site on 2025-05-27 at 9:00\n\n",
+      "thread_id": "thread_4000_7033",
+      "mail_summary": "Meeting with David at property site on 2025-05-27 at 9:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-27",
+          "Time": "9:00",
+          "Property Type": "furnished",
+          "Agent Name": "David",
+          "Location": "property site"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_5034",
+      "file_name": [],
+      "email": "test4353@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Thank you for your help with discussion about unfurnished with Emily on 2025-05-17\n\n",
+      "thread_id": "thread_1327_4776",
+      "mail_summary": "Meeting with Emily at virtual meeting on 2025-05-17 at 12:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-17",
+          "Time": "12:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Emily",
+          "Location": "virtual meeting"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_7192",
+      "file_name": [],
+      "email": "test8106@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Thank you for your help with discussion about apartment with Jennifer on 2025-05-07\n\n",
+      "thread_id": "thread_4466_3977",
+      "mail_summary": "Meeting with Jennifer at cafe on 2025-05-07 at 14:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-07",
+          "Time": "14:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_9010",
+      "file_name": [],
+      "email": "test1356@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Thank you for your help with discussion about commercial with Michael on 2025-05-10\n\n",
+      "thread_id": "thread_2238_8065",
+      "mail_summary": "Meeting with Michael at virtual meeting on 2025-05-10 at 12:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-10",
+          "Time": "12:00",
+          "Property Type": "commercial",
+          "Agent Name": "Michael",
+          "Location": "virtual meeting"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_1033",
+      "file_name": [],
+      "email": "test4657@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Thank you for your help with property viewing at cafe on 2025-05-20 at 9:00\n\n",
+      "thread_id": "thread_3714_9153",
+      "mail_summary": "Meeting with Sarah at cafe on 2025-05-20 at 9:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-20",
+          "Time": "9:00",
+          "Property Type": "apartment",
+          "Agent Name": "Sarah",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_3829",
+      "file_name": [],
+      "email": "test5337@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm really looking forward to meeting with Michael at office on 2025-05-19 at 17:00\n\n",
+      "thread_id": "thread_9624_7549",
+      "mail_summary": "Meeting with Michael at office on 2025-05-19 at 17:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-19",
+          "Time": "17:00",
+          "Property Type": "apartment",
+          "Agent Name": "Michael",
+          "Location": "office"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_4763",
+      "file_name": [],
+      "email": "test1764@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm really looking forward to meeting with Emily at property site on 2025-05-06 at 9:00\n\n",
+      "thread_id": "thread_2519_6633",
+      "mail_summary": "Meeting with Emily at property site on 2025-05-06 at 9:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-06",
+          "Time": "9:00",
+          "Property Type": "apartment",
+          "Agent Name": "Emily",
+          "Location": "property site"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_2197",
+      "file_name": [],
+      "email": "test2692@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm really looking forward to discussion about commercial with Sarah on 2025-05-30\n\n",
+      "thread_id": "thread_1295_9110",
+      "mail_summary": "Meeting with Sarah at shuttle bus stop on 2025-05-30 at 14:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-30",
+          "Time": "14:00",
+          "Property Type": "commercial",
+          "Agent Name": "Sarah",
+          "Location": "shuttle bus stop"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_2161",
+      "file_name": [],
+      "email": "test9396@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm really looking forward to discussion about apartment with Michael on 2025-05-19\n\n",
+      "thread_id": "thread_4818_7314",
+      "mail_summary": "Meeting with Michael at cafe on 2025-05-19 at 11:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-19",
+          "Time": "11:00",
+          "Property Type": "apartment",
+          "Agent Name": "Michael",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_8054",
+      "file_name": [],
+      "email": "test5152@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm really looking forward to meeting with David at virtual meeting on 2025-05-22 at 16:00\n\n",
+      "thread_id": "thread_1413_8109",
+      "mail_summary": "Meeting with David at virtual meeting on 2025-05-22 at 16:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-22",
+          "Time": "16:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "David",
+          "Location": "virtual meeting"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_6371",
+      "file_name": [],
+      "email": "test5633@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Thank you for your help with property viewing at cafe on 2025-05-29 at 11:00\n\n",
+      "thread_id": "thread_6635_7783",
+      "mail_summary": "Meeting with Emily at cafe on 2025-05-29 at 11:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-29",
+          "Time": "11:00",
+          "Property Type": "residential",
+          "Agent Name": "Emily",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_3144",
+      "file_name": [],
+      "email": "test6667@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Thank you for your help with property viewing at cafe on 2025-05-18 at 9:00\n\n",
+      "thread_id": "thread_1280_3489",
+      "mail_summary": "Meeting with David at cafe on 2025-05-18 at 9:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-18",
+          "Time": "9:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "David",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_8883",
+      "file_name": [],
+      "email": "test5530@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm really looking forward to discussion about apartment with Michael on 2025-05-12\n\n",
+      "thread_id": "thread_7875_4773",
+      "mail_summary": "Meeting with Michael at virtual meeting on 2025-05-12 at 9:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-12",
+          "Time": "9:00",
+          "Property Type": "apartment",
+          "Agent Name": "Michael",
+          "Location": "virtual meeting"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_6395",
+      "file_name": [],
+      "email": "test2463@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Great news! I'm excited to share that property viewing at office on 2025-05-04 at 15:00\n\n",
+      "thread_id": "thread_2900_3426",
+      "mail_summary": "Meeting with Michael at office on 2025-05-04 at 15:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-04",
+          "Time": "15:00",
+          "Property Type": "commercial",
+          "Agent Name": "Michael",
+          "Location": "office"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_5272",
+      "file_name": [],
+      "email": "test2805@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Great news! I'm excited to share that meeting with Jennifer at office on 2025-05-20 at 14:00\n\n",
+      "thread_id": "thread_4157_5236",
+      "mail_summary": "Meeting with Jennifer at office on 2025-05-20 at 14:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-20",
+          "Time": "14:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Jennifer",
+          "Location": "office"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_4831",
+      "file_name": [],
+      "email": "test8730@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm really looking forward to property viewing at office on 2025-05-29 at 13:00\n\n",
+      "thread_id": "thread_4077_6091",
+      "mail_summary": "Meeting with Emily at office on 2025-05-29 at 13:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-29",
+          "Time": "13:00",
+          "Property Type": "apartment",
+          "Agent Name": "Emily",
+          "Location": "office"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_4066",
+      "file_name": [],
+      "email": "test6015@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm really looking forward to property viewing at property site on 2025-05-26 at 12:00\n\n",
+      "thread_id": "thread_8158_7658",
+      "mail_summary": "Meeting with David at property site on 2025-05-26 at 12:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-26",
+          "Time": "12:00",
+          "Property Type": "residential",
+          "Agent Name": "David",
+          "Location": "property site"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_3709",
+      "file_name": [],
+      "email": "test9392@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Great news! I'm excited to share that discussion about unfurnished with David on 2025-05-14\n\n",
+      "thread_id": "thread_1069_6279",
+      "mail_summary": "Meeting with David at office on 2025-05-14 at 15:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-14",
+          "Time": "15:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "David",
+          "Location": "office"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_6379",
+      "file_name": [],
+      "email": "test6349@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Thank you for your help with meeting with Michael at cafe on 2025-05-08 at 13:00\n\n",
+      "thread_id": "thread_8377_5605",
+      "mail_summary": "Meeting with Michael at cafe on 2025-05-08 at 13:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-08",
+          "Time": "13:00",
+          "Property Type": "furnished",
+          "Agent Name": "Michael",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_6520",
+      "file_name": [],
+      "email": "test9827@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Great news! I'm excited to share that meeting with Jennifer at virtual meeting on 2025-05-25 at 14:00\n\n",
+      "thread_id": "thread_2438_9870",
+      "mail_summary": "Meeting with Jennifer at virtual meeting on 2025-05-25 at 14:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-25",
+          "Time": "14:00",
+          "Property Type": "residential",
+          "Agent Name": "Jennifer",
+          "Location": "virtual meeting"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_2313",
+      "file_name": [],
+      "email": "test7992@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm really looking forward to meeting with Jennifer at shuttle bus stop on 2025-05-23 at 15:00\n\n",
+      "thread_id": "thread_6580_4980",
+      "mail_summary": "Meeting with Jennifer at shuttle bus stop on 2025-05-23 at 15:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-23",
+          "Time": "15:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_8927",
+      "file_name": [],
+      "email": "test9638@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm really looking forward to discussion about apartment with Jennifer on 2025-05-21\n\n",
+      "thread_id": "thread_9906_2404",
+      "mail_summary": "Meeting with Jennifer at virtual meeting on 2025-05-21 at 9:00.",
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-21",
+          "Time": "9:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "virtual meeting"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_7034",
+      "file_name": [],
+      "email": "test3252@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm disappointed about property viewing at office on 2025-05-06 at 12:00\n\n",
+      "thread_id": "thread_4975_5921",
+      "mail_summary": "Meeting with Michael at office on 2025-05-06 at 12:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-06",
+          "Time": "12:00",
+          "Property Type": "commercial",
+          "Agent Name": "Michael",
+          "Location": "office"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_8373",
+      "file_name": [],
+      "email": "test3321@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm disappointed about property viewing at office on 2025-05-29 at 17:00\n\n",
+      "thread_id": "thread_9945_4340",
+      "mail_summary": "Meeting with David at office on 2025-05-29 at 17:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-29",
+          "Time": "17:00",
+          "Property Type": "residential",
+          "Agent Name": "David",
+          "Location": "office"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_6743",
+      "file_name": [],
+      "email": "test9266@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Unfortunately, we need to cancel discussion about residential with Emily on 2025-05-30\n\n",
+      "thread_id": "thread_3968_7224",
+      "mail_summary": "Meeting with Emily at virtual meeting on 2025-05-30 at 9:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-30",
+          "Time": "9:00",
+          "Property Type": "residential",
+          "Agent Name": "Emily",
+          "Location": "virtual meeting"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_1521",
+      "file_name": [],
+      "email": "test6366@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm concerned about meeting with Emily at cafe on 2025-05-11 at 16:00\n\n",
+      "thread_id": "thread_3610_9868",
+      "mail_summary": "Meeting with Emily at cafe on 2025-05-11 at 16:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-11",
+          "Time": "16:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Emily",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_4128",
+      "file_name": [],
+      "email": "test8445@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Unfortunately, we need to cancel meeting with Emily at virtual meeting on 2025-05-23 at 14:00\n\n",
+      "thread_id": "thread_5857_1547",
+      "mail_summary": "Meeting with Emily at virtual meeting on 2025-05-23 at 14:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-23",
+          "Time": "14:00",
+          "Property Type": "commercial",
+          "Agent Name": "Emily",
+          "Location": "virtual meeting"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_9375",
+      "file_name": [],
+      "email": "test6321@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Unfortunately, we need to cancel meeting with David at office on 2025-05-10 at 10:00\n\n",
+      "thread_id": "thread_8502_6071",
+      "mail_summary": "Meeting with David at office on 2025-05-10 at 10:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-10",
+          "Time": "10:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "David",
+          "Location": "office"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_5260",
+      "file_name": [],
+      "email": "test6235@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm concerned about property viewing at shuttle bus stop on 2025-05-31 at 15:00\n\n",
+      "thread_id": "thread_5263_9068",
+      "mail_summary": "Meeting with Sarah at shuttle bus stop on 2025-05-31 at 15:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-31",
+          "Time": "15:00",
+          "Property Type": "apartment",
+          "Agent Name": "Sarah",
+          "Location": "shuttle bus stop"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_9170",
+      "file_name": [],
+      "email": "test7576@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm concerned about meeting with Michael at office on 2025-05-16 at 14:00\n\n",
+      "thread_id": "thread_7499_7854",
+      "mail_summary": "Meeting with Michael at office on 2025-05-16 at 14:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-16",
+          "Time": "14:00",
+          "Property Type": "apartment",
+          "Agent Name": "Michael",
+          "Location": "office"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_7807",
+      "file_name": [],
+      "email": "test7326@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm concerned about property viewing at cafe on 2025-05-11 at 16:00\n\n",
+      "thread_id": "thread_8126_8394",
+      "mail_summary": "Meeting with Jennifer at cafe on 2025-05-11 at 16:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-11",
+          "Time": "16:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_6535",
+      "file_name": [],
+      "email": "test3731@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm concerned about meeting with Jennifer at shuttle bus stop on 2025-05-21 at 14:00\n\n",
+      "thread_id": "thread_6021_6465",
+      "mail_summary": "Meeting with Jennifer at shuttle bus stop on 2025-05-21 at 14:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-21",
+          "Time": "14:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_4601",
+      "file_name": [],
+      "email": "test1890@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm disappointed about property viewing at virtual meeting on 2025-05-11 at 13:00\n\n",
+      "thread_id": "thread_2074_6785",
+      "mail_summary": "Meeting with Emily at virtual meeting on 2025-05-11 at 13:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-11",
+          "Time": "13:00",
+          "Property Type": "residential",
+          "Agent Name": "Emily",
+          "Location": "virtual meeting"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_8854",
+      "file_name": [],
+      "email": "test2822@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm concerned about discussion about unfurnished with Emily on 2025-05-21\n\n",
+      "thread_id": "thread_2340_5927",
+      "mail_summary": "Meeting with Emily at cafe on 2025-05-21 at 16:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-21",
+          "Time": "16:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Emily",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_7555",
+      "file_name": [],
+      "email": "test2875@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm concerned about meeting with David at virtual meeting on 2025-05-31 at 12:00\n\n",
+      "thread_id": "thread_7494_6492",
+      "mail_summary": "Meeting with David at virtual meeting on 2025-05-31 at 12:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-31",
+          "Time": "12:00",
+          "Property Type": "furnished",
+          "Agent Name": "David",
+          "Location": "virtual meeting"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_7191",
+      "file_name": [],
+      "email": "test8895@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm disappointed about meeting with Jennifer at cafe on 2025-05-31 at 16:00\n\n",
+      "thread_id": "thread_1399_7673",
+      "mail_summary": "Meeting with Jennifer at cafe on 2025-05-31 at 16:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-31",
+          "Time": "16:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_8184",
+      "file_name": [],
+      "email": "test6333@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm disappointed about discussion about apartment with Michael on 2025-05-16\n\n",
+      "thread_id": "thread_6522_3378",
+      "mail_summary": "Meeting with Michael at shuttle bus stop on 2025-05-16 at 15:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-16",
+          "Time": "15:00",
+          "Property Type": "apartment",
+          "Agent Name": "Michael",
+          "Location": "shuttle bus stop"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_2942",
+      "file_name": [],
+      "email": "test8171@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm concerned about discussion about residential with Sarah on 2025-05-23\n\n",
+      "thread_id": "thread_7658_2323",
+      "mail_summary": "Meeting with Sarah at property site on 2025-05-23 at 12:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-23",
+          "Time": "12:00",
+          "Property Type": "residential",
+          "Agent Name": "Sarah",
+          "Location": "property site"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_5705",
+      "file_name": [],
+      "email": "test9666@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Unfortunately, we need to cancel meeting with Jennifer at cafe on 2025-05-21 at 17:00\n\n",
+      "thread_id": "thread_3164_1448",
+      "mail_summary": "Meeting with Jennifer at cafe on 2025-05-21 at 17:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-21",
+          "Time": "17:00",
+          "Property Type": "residential",
+          "Agent Name": "Jennifer",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_5499",
+      "file_name": [],
+      "email": "test4226@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm concerned about discussion about residential with David on 2025-05-16\n\n",
+      "thread_id": "thread_3231_6124",
+      "mail_summary": "Meeting with David at shuttle bus stop on 2025-05-16 at 12:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-16",
+          "Time": "12:00",
+          "Property Type": "residential",
+          "Agent Name": "David",
+          "Location": "shuttle bus stop"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_5009",
+      "file_name": [],
+      "email": "test7740@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm disappointed about meeting with Jennifer at office on 2025-05-16 at 16:00\n\n",
+      "thread_id": "thread_7598_9569",
+      "mail_summary": "Meeting with Jennifer at office on 2025-05-16 at 16:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-16",
+          "Time": "16:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "office"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_2936",
+      "file_name": [],
+      "email": "test8685@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Unfortunately, we need to cancel discussion about furnished with Michael on 2025-05-25\n\n",
+      "thread_id": "thread_8100_7767",
+      "mail_summary": "Meeting with Michael at shuttle bus stop on 2025-05-25 at 9:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-25",
+          "Time": "9:00",
+          "Property Type": "furnished",
+          "Agent Name": "Michael",
+          "Location": "shuttle bus stop"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_3545",
+      "file_name": [],
+      "email": "test4671@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm concerned about property viewing at property site on 2025-05-10 at 16:00\n\n",
+      "thread_id": "thread_6348_9864",
+      "mail_summary": "Meeting with Sarah at property site on 2025-05-10 at 16:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-10",
+          "Time": "16:00",
+          "Property Type": "residential",
+          "Agent Name": "Sarah",
+          "Location": "property site"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_3023",
+      "file_name": [],
+      "email": "test5486@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Unfortunately, we need to cancel property viewing at office on 2025-05-30 at 9:00\n\n",
+      "thread_id": "thread_2301_6519",
+      "mail_summary": "Meeting with Sarah at office on 2025-05-30 at 9:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-30",
+          "Time": "9:00",
+          "Property Type": "residential",
+          "Agent Name": "Sarah",
+          "Location": "office"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_2630",
+      "file_name": [],
+      "email": "test1571@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm concerned about discussion about commercial with David on 2025-05-30\n\n",
+      "thread_id": "thread_8273_1149",
+      "mail_summary": "Meeting with David at shuttle bus stop on 2025-05-30 at 15:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-30",
+          "Time": "15:00",
+          "Property Type": "commercial",
+          "Agent Name": "David",
+          "Location": "shuttle bus stop"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_6992",
+      "file_name": [],
+      "email": "test9785@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm concerned about meeting with Sarah at property site on 2025-05-10 at 17:00\n\n",
+      "thread_id": "thread_3524_1917",
+      "mail_summary": "Meeting with Sarah at property site on 2025-05-10 at 17:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-10",
+          "Time": "17:00",
+          "Property Type": "commercial",
+          "Agent Name": "Sarah",
+          "Location": "property site"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_4652",
+      "file_name": [],
+      "email": "test8727@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm concerned about discussion about apartment with Jennifer on 2025-06-01\n\n",
+      "thread_id": "thread_3268_2946",
+      "mail_summary": "Meeting with Jennifer at cafe on 2025-06-01 at 12:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-06-01",
+          "Time": "12:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_8358",
+      "file_name": [],
+      "email": "test7390@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Unfortunately, we need to cancel discussion about residential with Michael on 2025-06-01\n\n",
+      "thread_id": "thread_6409_3648",
+      "mail_summary": "Meeting with Michael at virtual meeting on 2025-06-01 at 9:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-06-01",
+          "Time": "9:00",
+          "Property Type": "residential",
+          "Agent Name": "Michael",
+          "Location": "virtual meeting"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_4009",
+      "file_name": [],
+      "email": "test1373@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Unfortunately, we need to cancel property viewing at cafe on 2025-05-27 at 13:00\n\n",
+      "thread_id": "thread_7108_1874",
+      "mail_summary": "Meeting with Sarah at cafe on 2025-05-27 at 13:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-27",
+          "Time": "13:00",
+          "Property Type": "commercial",
+          "Agent Name": "Sarah",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_8213",
+      "file_name": [],
+      "email": "test4855@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Unfortunately, we need to cancel property viewing at cafe on 2025-05-21 at 15:00\n\n",
+      "thread_id": "thread_7888_4034",
+      "mail_summary": "Meeting with Emily at cafe on 2025-05-21 at 15:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-21",
+          "Time": "15:00",
+          "Property Type": "residential",
+          "Agent Name": "Emily",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_9558",
+      "file_name": [],
+      "email": "test8129@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm disappointed about discussion about furnished with Jennifer on 2025-05-27\n\n",
+      "thread_id": "thread_8877_7295",
+      "mail_summary": "Meeting with Jennifer at cafe on 2025-05-27 at 9:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-27",
+          "Time": "9:00",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_5679",
+      "file_name": [],
+      "email": "test2466@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm disappointed about discussion about residential with David on 2025-05-23\n\n",
+      "thread_id": "thread_9162_5518",
+      "mail_summary": "Meeting with David at cafe on 2025-05-23 at 15:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-23",
+          "Time": "15:00",
+          "Property Type": "residential",
+          "Agent Name": "David",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_9432",
+      "file_name": [],
+      "email": "test1423@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm disappointed about property viewing at virtual meeting on 2025-05-07 at 17:00\n\n",
+      "thread_id": "thread_8677_2124",
+      "mail_summary": "Meeting with David at virtual meeting on 2025-05-07 at 17:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-07",
+          "Time": "17:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "David",
+          "Location": "virtual meeting"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_2410",
+      "file_name": [],
+      "email": "test9774@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm concerned about meeting with Michael at cafe on 2025-06-02 at 9:00\n\n",
+      "thread_id": "thread_6523_2818",
+      "mail_summary": "Meeting with Michael at cafe on 2025-06-02 at 9:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-06-02",
+          "Time": "9:00",
+          "Property Type": "commercial",
+          "Agent Name": "Michael",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_9070",
+      "file_name": [],
+      "email": "test9393@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I'm disappointed about meeting with Sarah at cafe on 2025-05-28 at 16:00\n\n",
+      "thread_id": "thread_5359_5973",
+      "mail_summary": "Meeting with Sarah at cafe on 2025-05-28 at 16:00.",
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-28",
+          "Time": "16:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Sarah",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_9307",
+      "file_name": [],
+      "email": "test7836@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Regarding discussion about commercial with Sarah on 2025-05-22\n\n",
+      "thread_id": "thread_5336_3778",
+      "mail_summary": "Meeting with Sarah at office on 2025-05-22 at 15:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-22",
+          "Time": "15:00",
+          "Property Type": "commercial",
+          "Agent Name": "Sarah",
+          "Location": "office"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_3709",
+      "file_name": [],
+      "email": "test2049@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Please note that property viewing at shuttle bus stop on 2025-05-24 at 13:00\n\n",
+      "thread_id": "thread_9230_7765",
+      "mail_summary": "Meeting with David at shuttle bus stop on 2025-05-24 at 13:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-24",
+          "Time": "13:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "David",
+          "Location": "shuttle bus stop"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_3588",
+      "file_name": [],
+      "email": "test1188@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Please note that discussion about apartment with Michael on 2025-05-26\n\n",
+      "thread_id": "thread_6130_5011",
+      "mail_summary": "Meeting with Michael at cafe on 2025-05-26 at 10:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-26",
+          "Time": "10:00",
+          "Property Type": "apartment",
+          "Agent Name": "Michael",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_8355",
+      "file_name": [],
+      "email": "test2615@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Regarding meeting with Michael at virtual meeting on 2025-05-14 at 16:00\n\n",
+      "thread_id": "thread_7794_3545",
+      "mail_summary": "Meeting with Michael at virtual meeting on 2025-05-14 at 16:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-14",
+          "Time": "16:00",
+          "Property Type": "furnished",
+          "Agent Name": "Michael",
+          "Location": "virtual meeting"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_5872",
+      "file_name": [],
+      "email": "test1260@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I wanted to inform you about property viewing at office on 2025-05-20 at 14:00\n\n",
+      "thread_id": "thread_3016_3965",
+      "mail_summary": "Meeting with Sarah at office on 2025-05-20 at 14:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-20",
+          "Time": "14:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Sarah",
+          "Location": "office"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_6525",
+      "file_name": [],
+      "email": "test9059@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Regarding property viewing at office on 2025-05-27 at 13:00\n\n",
+      "thread_id": "thread_7381_9348",
+      "mail_summary": "Meeting with Emily at office on 2025-05-27 at 13:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-27",
+          "Time": "13:00",
+          "Property Type": "residential",
+          "Agent Name": "Emily",
+          "Location": "office"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_2733",
+      "file_name": [],
+      "email": "test5028@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I wanted to inform you about discussion about apartment with Jennifer on 2025-05-21\n\n",
+      "thread_id": "thread_1972_8233",
+      "mail_summary": "Meeting with Jennifer at shuttle bus stop on 2025-05-21 at 17:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-21",
+          "Time": "17:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_6959",
+      "file_name": [],
+      "email": "test8155@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Please note that meeting with Michael at cafe on 2025-05-20 at 11:00\n\n",
+      "thread_id": "thread_9315_5338",
+      "mail_summary": "Meeting with Michael at cafe on 2025-05-20 at 11:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-20",
+          "Time": "11:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Michael",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_3176",
+      "file_name": [],
+      "email": "test7122@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Regarding discussion about furnished with Emily on 2025-05-12\n\n",
+      "thread_id": "thread_7151_3369",
+      "mail_summary": "Meeting with Emily at property site on 2025-05-12 at 15:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-12",
+          "Time": "15:00",
+          "Property Type": "furnished",
+          "Agent Name": "Emily",
+          "Location": "property site"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_4464",
+      "file_name": [],
+      "email": "test4651@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I wanted to inform you about discussion about furnished with Michael on 2025-05-24\n\n",
+      "thread_id": "thread_9874_9285",
+      "mail_summary": "Meeting with Michael at office on 2025-05-24 at 12:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-24",
+          "Time": "12:00",
+          "Property Type": "furnished",
+          "Agent Name": "Michael",
+          "Location": "office"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_3190",
+      "file_name": [],
+      "email": "test1774@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Regarding meeting with Jennifer at cafe on 2025-05-23 at 10:00\n\n",
+      "thread_id": "thread_8971_9501",
+      "mail_summary": "Meeting with Jennifer at cafe on 2025-05-23 at 10:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-23",
+          "Time": "10:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Jennifer",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_2389",
+      "file_name": [],
+      "email": "test7578@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Regarding meeting with Emily at shuttle bus stop on 2025-05-24 at 12:00\n\n",
+      "thread_id": "thread_8778_8537",
+      "mail_summary": "Meeting with Emily at shuttle bus stop on 2025-05-24 at 12:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-24",
+          "Time": "12:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Emily",
+          "Location": "shuttle bus stop"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_7847",
+      "file_name": [],
+      "email": "test7449@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Please note that meeting with Michael at virtual meeting on 2025-05-05 at 14:00\n\n",
+      "thread_id": "thread_1938_6034",
+      "mail_summary": "Meeting with Michael at virtual meeting on 2025-05-05 at 14:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-05",
+          "Time": "14:00",
+          "Property Type": "furnished",
+          "Agent Name": "Michael",
+          "Location": "virtual meeting"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_5822",
+      "file_name": [],
+      "email": "test1017@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Please note that property viewing at shuttle bus stop on 2025-05-14 at 11:00\n\n",
+      "thread_id": "thread_5373_6836",
+      "mail_summary": "Meeting with Emily at shuttle bus stop on 2025-05-14 at 11:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-14",
+          "Time": "11:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Emily",
+          "Location": "shuttle bus stop"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_9988",
+      "file_name": [],
+      "email": "test3072@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Regarding meeting with Michael at virtual meeting on 2025-05-12 at 10:00\n\n",
+      "thread_id": "thread_1833_4473",
+      "mail_summary": "Meeting with Michael at virtual meeting on 2025-05-12 at 10:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-12",
+          "Time": "10:00",
+          "Property Type": "apartment",
+          "Agent Name": "Michael",
+          "Location": "virtual meeting"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_6484",
+      "file_name": [],
+      "email": "test3135@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I wanted to inform you about meeting with Sarah at virtual meeting on 2025-05-30 at 14:00\n\n",
+      "thread_id": "thread_8739_8834",
+      "mail_summary": "Meeting with Sarah at virtual meeting on 2025-05-30 at 14:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-30",
+          "Time": "14:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Sarah",
+          "Location": "virtual meeting"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_6363",
+      "file_name": [],
+      "email": "test6727@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I wanted to inform you about meeting with Jennifer at shuttle bus stop on 2025-05-05 at 16:00\n\n",
+      "thread_id": "thread_9537_1001",
+      "mail_summary": "Meeting with Jennifer at shuttle bus stop on 2025-05-05 at 16:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-05",
+          "Time": "16:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_3557",
+      "file_name": [],
+      "email": "test4068@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Please note that meeting with Sarah at virtual meeting on 2025-05-07 at 11:00\n\n",
+      "thread_id": "thread_1980_7733",
+      "mail_summary": "Meeting with Sarah at virtual meeting on 2025-05-07 at 11:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-07",
+          "Time": "11:00",
+          "Property Type": "commercial",
+          "Agent Name": "Sarah",
+          "Location": "virtual meeting"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_8821",
+      "file_name": [],
+      "email": "test9374@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Regarding meeting with Jennifer at virtual meeting on 2025-05-16 at 13:00\n\n",
+      "thread_id": "thread_9112_7809",
+      "mail_summary": "Meeting with Jennifer at virtual meeting on 2025-05-16 at 13:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-16",
+          "Time": "13:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "virtual meeting"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_3744",
+      "file_name": [],
+      "email": "test8927@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I wanted to inform you about property viewing at virtual meeting on 2025-06-01 at 11:00\n\n",
+      "thread_id": "thread_4772_9995",
+      "mail_summary": "Meeting with Emily at virtual meeting on 2025-06-01 at 11:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-06-01",
+          "Time": "11:00",
+          "Property Type": "residential",
+          "Agent Name": "Emily",
+          "Location": "virtual meeting"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_3658",
+      "file_name": [],
+      "email": "test9810@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Please note that property viewing at property site on 2025-05-19 at 9:00\n\n",
+      "thread_id": "thread_7694_5918",
+      "mail_summary": "Meeting with David at property site on 2025-05-19 at 9:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-19",
+          "Time": "9:00",
+          "Property Type": "apartment",
+          "Agent Name": "David",
+          "Location": "property site"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_8907",
+      "file_name": [],
+      "email": "test9253@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Please note that meeting with Emily at virtual meeting on 2025-05-07 at 9:00\n\n",
+      "thread_id": "thread_8544_4743",
+      "mail_summary": "Meeting with Emily at virtual meeting on 2025-05-07 at 9:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-07",
+          "Time": "9:00",
+          "Property Type": "apartment",
+          "Agent Name": "Emily",
+          "Location": "virtual meeting"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_8080",
+      "file_name": [],
+      "email": "test3082@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Please note that meeting with Michael at office on 2025-05-18 at 17:00\n\n",
+      "thread_id": "thread_5638_4438",
+      "mail_summary": "Meeting with Michael at office on 2025-05-18 at 17:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-18",
+          "Time": "17:00",
+          "Property Type": "apartment",
+          "Agent Name": "Michael",
+          "Location": "office"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_7779",
+      "file_name": [],
+      "email": "test4086@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Please note that discussion about residential with Michael on 2025-05-24\n\n",
+      "thread_id": "thread_1729_6435",
+      "mail_summary": "Meeting with Michael at property site on 2025-05-24 at 10:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-24",
+          "Time": "10:00",
+          "Property Type": "residential",
+          "Agent Name": "Michael",
+          "Location": "property site"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_1795",
+      "file_name": [],
+      "email": "test1579@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Please note that meeting with Jennifer at property site on 2025-05-17 at 10:00\n\n",
+      "thread_id": "thread_8385_9544",
+      "mail_summary": "Meeting with Jennifer at property site on 2025-05-17 at 10:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-17",
+          "Time": "10:00",
+          "Property Type": "residential",
+          "Agent Name": "Jennifer",
+          "Location": "property site"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_2737",
+      "file_name": [],
+      "email": "test4516@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I wanted to inform you about discussion about apartment with David on 2025-05-18\n\n",
+      "thread_id": "thread_2388_2835",
+      "mail_summary": "Meeting with David at shuttle bus stop on 2025-05-18 at 16:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-18",
+          "Time": "16:00",
+          "Property Type": "apartment",
+          "Agent Name": "David",
+          "Location": "shuttle bus stop"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_7486",
+      "file_name": [],
+      "email": "test6455@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Please note that meeting with Michael at office on 2025-05-29 at 15:00\n\n",
+      "thread_id": "thread_5039_6765",
+      "mail_summary": "Meeting with Michael at office on 2025-05-29 at 15:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-29",
+          "Time": "15:00",
+          "Property Type": "apartment",
+          "Agent Name": "Michael",
+          "Location": "office"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_2972",
+      "file_name": [],
+      "email": "test5514@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Please note that discussion about unfurnished with Jennifer on 2025-05-27\n\n",
+      "thread_id": "thread_2201_4525",
+      "mail_summary": "Meeting with Jennifer at office on 2025-05-27 at 17:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-27",
+          "Time": "17:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Jennifer",
+          "Location": "office"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_7565",
+      "file_name": [],
+      "email": "test1694@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Regarding property viewing at cafe on 2025-05-28 at 17:00\n\n",
+      "thread_id": "thread_8576_9509",
+      "mail_summary": "Meeting with Emily at cafe on 2025-05-28 at 17:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-28",
+          "Time": "17:00",
+          "Property Type": "apartment",
+          "Agent Name": "Emily",
+          "Location": "cafe"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_7367",
+      "file_name": [],
+      "email": "test4705@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "I wanted to inform you about property viewing at virtual meeting on 2025-05-28 at 9:00\n\n",
+      "thread_id": "thread_3974_4628",
+      "mail_summary": "Meeting with Sarah at virtual meeting on 2025-05-28 at 9:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-28",
+          "Time": "9:00",
+          "Property Type": "furnished",
+          "Agent Name": "Sarah",
+          "Location": "virtual meeting"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_6073",
+      "file_name": [],
+      "email": "test3246@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Please note that property viewing at shuttle bus stop on 2025-05-07 at 15:00\n\n",
+      "thread_id": "thread_7869_2717",
+      "mail_summary": "Meeting with Jennifer at shuttle bus stop on 2025-05-07 at 15:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-07",
+          "Time": "15:00",
+          "Property Type": "commercial",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_3140",
+      "file_name": [],
+      "email": "test3280@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Regarding property viewing at property site on 2025-05-05 at 10:00\n\n",
+      "thread_id": "thread_3145_9504",
+      "mail_summary": "Meeting with Michael at property site on 2025-05-05 at 10:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-05",
+          "Time": "10:00",
+          "Property Type": "commercial",
+          "Agent Name": "Michael",
+          "Location": "property site"
+        }
+      ]
+    },
+    {
+      "mail_id": "test_20250503134232_5210",
+      "file_name": [],
+      "email": "test3782@example.com",
+      "mail_time": "2025-05-03T13:42:32Z",
+      "body_type": "html",
+      "mail_body": "Regarding meeting with Sarah at office on 2025-05-16 at 17:00\n\n",
+      "thread_id": "thread_9932_3873",
+      "mail_summary": "Meeting with Sarah at office on 2025-05-16 at 17:00.",
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-16",
+          "Time": "17:00",
+          "Property Type": "residential",
+          "Agent Name": "Sarah",
+          "Location": "office"
+        }
+      ]
+    }
+  ],
+  "predictions": [
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Mock Event",
+          "Date": "2025-02-26",
+          "Time": "1pm",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "This is a mock summary of the email."
+    }
+  ],
+  "ground_truth": [
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-20",
+          "Time": "10:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Emily",
+          "Location": "property site"
+        }
+      ],
+      "summary": "Meeting with Emily at property site on 2025-05-20 at 10:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-17",
+          "Time": "11:00",
+          "Property Type": "apartment",
+          "Agent Name": "David",
+          "Location": "property site"
+        }
+      ],
+      "summary": "Meeting with David at property site on 2025-05-17 at 11:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-31",
+          "Time": "16:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "property site"
+        }
+      ],
+      "summary": "Meeting with Jennifer at property site on 2025-05-31 at 16:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-29",
+          "Time": "9:00",
+          "Property Type": "commercial",
+          "Agent Name": "David",
+          "Location": "office"
+        }
+      ],
+      "summary": "Meeting with David at office on 2025-05-29 at 9:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-24",
+          "Time": "16:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Jennifer",
+          "Location": "virtual meeting"
+        }
+      ],
+      "summary": "Meeting with Jennifer at virtual meeting on 2025-05-24 at 16:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-12",
+          "Time": "16:00",
+          "Property Type": "apartment",
+          "Agent Name": "Michael",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with Michael at cafe on 2025-05-12 at 16:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-09",
+          "Time": "10:00",
+          "Property Type": "commercial",
+          "Agent Name": "Michael",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "Meeting with Michael at shuttle bus stop on 2025-05-09 at 10:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-05",
+          "Time": "17:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Emily",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with Emily at cafe on 2025-05-05 at 17:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-26",
+          "Time": "14:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Michael",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with Michael at cafe on 2025-05-26 at 14:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-25",
+          "Time": "9:00",
+          "Property Type": "residential",
+          "Agent Name": "Michael",
+          "Location": "property site"
+        }
+      ],
+      "summary": "Meeting with Michael at property site on 2025-05-25 at 9:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-31",
+          "Time": "16:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Sarah",
+          "Location": "office"
+        }
+      ],
+      "summary": "Meeting with Sarah at office on 2025-05-31 at 16:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-27",
+          "Time": "9:00",
+          "Property Type": "furnished",
+          "Agent Name": "David",
+          "Location": "property site"
+        }
+      ],
+      "summary": "Meeting with David at property site on 2025-05-27 at 9:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-17",
+          "Time": "12:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Emily",
+          "Location": "virtual meeting"
+        }
+      ],
+      "summary": "Meeting with Emily at virtual meeting on 2025-05-17 at 12:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-07",
+          "Time": "14:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with Jennifer at cafe on 2025-05-07 at 14:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-10",
+          "Time": "12:00",
+          "Property Type": "commercial",
+          "Agent Name": "Michael",
+          "Location": "virtual meeting"
+        }
+      ],
+      "summary": "Meeting with Michael at virtual meeting on 2025-05-10 at 12:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-20",
+          "Time": "9:00",
+          "Property Type": "apartment",
+          "Agent Name": "Sarah",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with Sarah at cafe on 2025-05-20 at 9:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-19",
+          "Time": "17:00",
+          "Property Type": "apartment",
+          "Agent Name": "Michael",
+          "Location": "office"
+        }
+      ],
+      "summary": "Meeting with Michael at office on 2025-05-19 at 17:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-06",
+          "Time": "9:00",
+          "Property Type": "apartment",
+          "Agent Name": "Emily",
+          "Location": "property site"
+        }
+      ],
+      "summary": "Meeting with Emily at property site on 2025-05-06 at 9:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-30",
+          "Time": "14:00",
+          "Property Type": "commercial",
+          "Agent Name": "Sarah",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "Meeting with Sarah at shuttle bus stop on 2025-05-30 at 14:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-19",
+          "Time": "11:00",
+          "Property Type": "apartment",
+          "Agent Name": "Michael",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with Michael at cafe on 2025-05-19 at 11:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-22",
+          "Time": "16:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "David",
+          "Location": "virtual meeting"
+        }
+      ],
+      "summary": "Meeting with David at virtual meeting on 2025-05-22 at 16:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-29",
+          "Time": "11:00",
+          "Property Type": "residential",
+          "Agent Name": "Emily",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with Emily at cafe on 2025-05-29 at 11:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-18",
+          "Time": "9:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "David",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with David at cafe on 2025-05-18 at 9:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-12",
+          "Time": "9:00",
+          "Property Type": "apartment",
+          "Agent Name": "Michael",
+          "Location": "virtual meeting"
+        }
+      ],
+      "summary": "Meeting with Michael at virtual meeting on 2025-05-12 at 9:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-04",
+          "Time": "15:00",
+          "Property Type": "commercial",
+          "Agent Name": "Michael",
+          "Location": "office"
+        }
+      ],
+      "summary": "Meeting with Michael at office on 2025-05-04 at 15:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-20",
+          "Time": "14:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Jennifer",
+          "Location": "office"
+        }
+      ],
+      "summary": "Meeting with Jennifer at office on 2025-05-20 at 14:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-29",
+          "Time": "13:00",
+          "Property Type": "apartment",
+          "Agent Name": "Emily",
+          "Location": "office"
+        }
+      ],
+      "summary": "Meeting with Emily at office on 2025-05-29 at 13:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-26",
+          "Time": "12:00",
+          "Property Type": "residential",
+          "Agent Name": "David",
+          "Location": "property site"
+        }
+      ],
+      "summary": "Meeting with David at property site on 2025-05-26 at 12:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-14",
+          "Time": "15:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "David",
+          "Location": "office"
+        }
+      ],
+      "summary": "Meeting with David at office on 2025-05-14 at 15:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-08",
+          "Time": "13:00",
+          "Property Type": "furnished",
+          "Agent Name": "Michael",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with Michael at cafe on 2025-05-08 at 13:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-25",
+          "Time": "14:00",
+          "Property Type": "residential",
+          "Agent Name": "Jennifer",
+          "Location": "virtual meeting"
+        }
+      ],
+      "summary": "Meeting with Jennifer at virtual meeting on 2025-05-25 at 14:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-23",
+          "Time": "15:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "Meeting with Jennifer at shuttle bus stop on 2025-05-23 at 15:00."
+    },
+    {
+      "sentiment": "positive",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-21",
+          "Time": "9:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "virtual meeting"
+        }
+      ],
+      "summary": "Meeting with Jennifer at virtual meeting on 2025-05-21 at 9:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-06",
+          "Time": "12:00",
+          "Property Type": "commercial",
+          "Agent Name": "Michael",
+          "Location": "office"
+        }
+      ],
+      "summary": "Meeting with Michael at office on 2025-05-06 at 12:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-29",
+          "Time": "17:00",
+          "Property Type": "residential",
+          "Agent Name": "David",
+          "Location": "office"
+        }
+      ],
+      "summary": "Meeting with David at office on 2025-05-29 at 17:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-30",
+          "Time": "9:00",
+          "Property Type": "residential",
+          "Agent Name": "Emily",
+          "Location": "virtual meeting"
+        }
+      ],
+      "summary": "Meeting with Emily at virtual meeting on 2025-05-30 at 9:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-11",
+          "Time": "16:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Emily",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with Emily at cafe on 2025-05-11 at 16:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-23",
+          "Time": "14:00",
+          "Property Type": "commercial",
+          "Agent Name": "Emily",
+          "Location": "virtual meeting"
+        }
+      ],
+      "summary": "Meeting with Emily at virtual meeting on 2025-05-23 at 14:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-10",
+          "Time": "10:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "David",
+          "Location": "office"
+        }
+      ],
+      "summary": "Meeting with David at office on 2025-05-10 at 10:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-31",
+          "Time": "15:00",
+          "Property Type": "apartment",
+          "Agent Name": "Sarah",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "Meeting with Sarah at shuttle bus stop on 2025-05-31 at 15:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-16",
+          "Time": "14:00",
+          "Property Type": "apartment",
+          "Agent Name": "Michael",
+          "Location": "office"
+        }
+      ],
+      "summary": "Meeting with Michael at office on 2025-05-16 at 14:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-11",
+          "Time": "16:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with Jennifer at cafe on 2025-05-11 at 16:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-21",
+          "Time": "14:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "Meeting with Jennifer at shuttle bus stop on 2025-05-21 at 14:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-11",
+          "Time": "13:00",
+          "Property Type": "residential",
+          "Agent Name": "Emily",
+          "Location": "virtual meeting"
+        }
+      ],
+      "summary": "Meeting with Emily at virtual meeting on 2025-05-11 at 13:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-21",
+          "Time": "16:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Emily",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with Emily at cafe on 2025-05-21 at 16:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-31",
+          "Time": "12:00",
+          "Property Type": "furnished",
+          "Agent Name": "David",
+          "Location": "virtual meeting"
+        }
+      ],
+      "summary": "Meeting with David at virtual meeting on 2025-05-31 at 12:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-31",
+          "Time": "16:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with Jennifer at cafe on 2025-05-31 at 16:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-16",
+          "Time": "15:00",
+          "Property Type": "apartment",
+          "Agent Name": "Michael",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "Meeting with Michael at shuttle bus stop on 2025-05-16 at 15:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-23",
+          "Time": "12:00",
+          "Property Type": "residential",
+          "Agent Name": "Sarah",
+          "Location": "property site"
+        }
+      ],
+      "summary": "Meeting with Sarah at property site on 2025-05-23 at 12:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-21",
+          "Time": "17:00",
+          "Property Type": "residential",
+          "Agent Name": "Jennifer",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with Jennifer at cafe on 2025-05-21 at 17:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-16",
+          "Time": "12:00",
+          "Property Type": "residential",
+          "Agent Name": "David",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "Meeting with David at shuttle bus stop on 2025-05-16 at 12:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-16",
+          "Time": "16:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "office"
+        }
+      ],
+      "summary": "Meeting with Jennifer at office on 2025-05-16 at 16:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-25",
+          "Time": "9:00",
+          "Property Type": "furnished",
+          "Agent Name": "Michael",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "Meeting with Michael at shuttle bus stop on 2025-05-25 at 9:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-10",
+          "Time": "16:00",
+          "Property Type": "residential",
+          "Agent Name": "Sarah",
+          "Location": "property site"
+        }
+      ],
+      "summary": "Meeting with Sarah at property site on 2025-05-10 at 16:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-30",
+          "Time": "9:00",
+          "Property Type": "residential",
+          "Agent Name": "Sarah",
+          "Location": "office"
+        }
+      ],
+      "summary": "Meeting with Sarah at office on 2025-05-30 at 9:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-30",
+          "Time": "15:00",
+          "Property Type": "commercial",
+          "Agent Name": "David",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "Meeting with David at shuttle bus stop on 2025-05-30 at 15:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-10",
+          "Time": "17:00",
+          "Property Type": "commercial",
+          "Agent Name": "Sarah",
+          "Location": "property site"
+        }
+      ],
+      "summary": "Meeting with Sarah at property site on 2025-05-10 at 17:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-06-01",
+          "Time": "12:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with Jennifer at cafe on 2025-06-01 at 12:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-06-01",
+          "Time": "9:00",
+          "Property Type": "residential",
+          "Agent Name": "Michael",
+          "Location": "virtual meeting"
+        }
+      ],
+      "summary": "Meeting with Michael at virtual meeting on 2025-06-01 at 9:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-27",
+          "Time": "13:00",
+          "Property Type": "commercial",
+          "Agent Name": "Sarah",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with Sarah at cafe on 2025-05-27 at 13:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-21",
+          "Time": "15:00",
+          "Property Type": "residential",
+          "Agent Name": "Emily",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with Emily at cafe on 2025-05-21 at 15:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-27",
+          "Time": "9:00",
+          "Property Type": "furnished",
+          "Agent Name": "Jennifer",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with Jennifer at cafe on 2025-05-27 at 9:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-23",
+          "Time": "15:00",
+          "Property Type": "residential",
+          "Agent Name": "David",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with David at cafe on 2025-05-23 at 15:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-07",
+          "Time": "17:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "David",
+          "Location": "virtual meeting"
+        }
+      ],
+      "summary": "Meeting with David at virtual meeting on 2025-05-07 at 17:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-06-02",
+          "Time": "9:00",
+          "Property Type": "commercial",
+          "Agent Name": "Michael",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with Michael at cafe on 2025-06-02 at 9:00."
+    },
+    {
+      "sentiment": "negative",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-28",
+          "Time": "16:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Sarah",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with Sarah at cafe on 2025-05-28 at 16:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-22",
+          "Time": "15:00",
+          "Property Type": "commercial",
+          "Agent Name": "Sarah",
+          "Location": "office"
+        }
+      ],
+      "summary": "Meeting with Sarah at office on 2025-05-22 at 15:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-24",
+          "Time": "13:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "David",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "Meeting with David at shuttle bus stop on 2025-05-24 at 13:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-26",
+          "Time": "10:00",
+          "Property Type": "apartment",
+          "Agent Name": "Michael",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with Michael at cafe on 2025-05-26 at 10:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-14",
+          "Time": "16:00",
+          "Property Type": "furnished",
+          "Agent Name": "Michael",
+          "Location": "virtual meeting"
+        }
+      ],
+      "summary": "Meeting with Michael at virtual meeting on 2025-05-14 at 16:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-20",
+          "Time": "14:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Sarah",
+          "Location": "office"
+        }
+      ],
+      "summary": "Meeting with Sarah at office on 2025-05-20 at 14:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-27",
+          "Time": "13:00",
+          "Property Type": "residential",
+          "Agent Name": "Emily",
+          "Location": "office"
+        }
+      ],
+      "summary": "Meeting with Emily at office on 2025-05-27 at 13:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-21",
+          "Time": "17:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "Meeting with Jennifer at shuttle bus stop on 2025-05-21 at 17:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-20",
+          "Time": "11:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Michael",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with Michael at cafe on 2025-05-20 at 11:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-12",
+          "Time": "15:00",
+          "Property Type": "furnished",
+          "Agent Name": "Emily",
+          "Location": "property site"
+        }
+      ],
+      "summary": "Meeting with Emily at property site on 2025-05-12 at 15:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-24",
+          "Time": "12:00",
+          "Property Type": "furnished",
+          "Agent Name": "Michael",
+          "Location": "office"
+        }
+      ],
+      "summary": "Meeting with Michael at office on 2025-05-24 at 12:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-23",
+          "Time": "10:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Jennifer",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with Jennifer at cafe on 2025-05-23 at 10:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-24",
+          "Time": "12:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Emily",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "Meeting with Emily at shuttle bus stop on 2025-05-24 at 12:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-05",
+          "Time": "14:00",
+          "Property Type": "furnished",
+          "Agent Name": "Michael",
+          "Location": "virtual meeting"
+        }
+      ],
+      "summary": "Meeting with Michael at virtual meeting on 2025-05-05 at 14:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-14",
+          "Time": "11:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Emily",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "Meeting with Emily at shuttle bus stop on 2025-05-14 at 11:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-12",
+          "Time": "10:00",
+          "Property Type": "apartment",
+          "Agent Name": "Michael",
+          "Location": "virtual meeting"
+        }
+      ],
+      "summary": "Meeting with Michael at virtual meeting on 2025-05-12 at 10:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-30",
+          "Time": "14:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Sarah",
+          "Location": "virtual meeting"
+        }
+      ],
+      "summary": "Meeting with Sarah at virtual meeting on 2025-05-30 at 14:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-05",
+          "Time": "16:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "Meeting with Jennifer at shuttle bus stop on 2025-05-05 at 16:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-07",
+          "Time": "11:00",
+          "Property Type": "commercial",
+          "Agent Name": "Sarah",
+          "Location": "virtual meeting"
+        }
+      ],
+      "summary": "Meeting with Sarah at virtual meeting on 2025-05-07 at 11:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-16",
+          "Time": "13:00",
+          "Property Type": "apartment",
+          "Agent Name": "Jennifer",
+          "Location": "virtual meeting"
+        }
+      ],
+      "summary": "Meeting with Jennifer at virtual meeting on 2025-05-16 at 13:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-06-01",
+          "Time": "11:00",
+          "Property Type": "residential",
+          "Agent Name": "Emily",
+          "Location": "virtual meeting"
+        }
+      ],
+      "summary": "Meeting with Emily at virtual meeting on 2025-06-01 at 11:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-19",
+          "Time": "9:00",
+          "Property Type": "apartment",
+          "Agent Name": "David",
+          "Location": "property site"
+        }
+      ],
+      "summary": "Meeting with David at property site on 2025-05-19 at 9:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-07",
+          "Time": "9:00",
+          "Property Type": "apartment",
+          "Agent Name": "Emily",
+          "Location": "virtual meeting"
+        }
+      ],
+      "summary": "Meeting with Emily at virtual meeting on 2025-05-07 at 9:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-18",
+          "Time": "17:00",
+          "Property Type": "apartment",
+          "Agent Name": "Michael",
+          "Location": "office"
+        }
+      ],
+      "summary": "Meeting with Michael at office on 2025-05-18 at 17:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-24",
+          "Time": "10:00",
+          "Property Type": "residential",
+          "Agent Name": "Michael",
+          "Location": "property site"
+        }
+      ],
+      "summary": "Meeting with Michael at property site on 2025-05-24 at 10:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-17",
+          "Time": "10:00",
+          "Property Type": "residential",
+          "Agent Name": "Jennifer",
+          "Location": "property site"
+        }
+      ],
+      "summary": "Meeting with Jennifer at property site on 2025-05-17 at 10:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with David",
+          "Date": "2025-05-18",
+          "Time": "16:00",
+          "Property Type": "apartment",
+          "Agent Name": "David",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "Meeting with David at shuttle bus stop on 2025-05-18 at 16:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-29",
+          "Time": "15:00",
+          "Property Type": "apartment",
+          "Agent Name": "Michael",
+          "Location": "office"
+        }
+      ],
+      "summary": "Meeting with Michael at office on 2025-05-29 at 15:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-27",
+          "Time": "17:00",
+          "Property Type": "unfurnished",
+          "Agent Name": "Jennifer",
+          "Location": "office"
+        }
+      ],
+      "summary": "Meeting with Jennifer at office on 2025-05-27 at 17:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Emily",
+          "Date": "2025-05-28",
+          "Time": "17:00",
+          "Property Type": "apartment",
+          "Agent Name": "Emily",
+          "Location": "cafe"
+        }
+      ],
+      "summary": "Meeting with Emily at cafe on 2025-05-28 at 17:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-28",
+          "Time": "9:00",
+          "Property Type": "furnished",
+          "Agent Name": "Sarah",
+          "Location": "virtual meeting"
+        }
+      ],
+      "summary": "Meeting with Sarah at virtual meeting on 2025-05-28 at 9:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Jennifer",
+          "Date": "2025-05-07",
+          "Time": "15:00",
+          "Property Type": "commercial",
+          "Agent Name": "Jennifer",
+          "Location": "shuttle bus stop"
+        }
+      ],
+      "summary": "Meeting with Jennifer at shuttle bus stop on 2025-05-07 at 15:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Michael",
+          "Date": "2025-05-05",
+          "Time": "10:00",
+          "Property Type": "commercial",
+          "Agent Name": "Michael",
+          "Location": "property site"
+        }
+      ],
+      "summary": "Meeting with Michael at property site on 2025-05-05 at 10:00."
+    },
+    {
+      "sentiment": "neutral",
+      "events": [
+        {
+          "Event name": "Meeting with Sarah",
+          "Date": "2025-05-16",
+          "Time": "17:00",
+          "Property Type": "residential",
+          "Agent Name": "Sarah",
+          "Location": "office"
+        }
+      ],
+      "summary": "Meeting with Sarah at office on 2025-05-16 at 17:00."
+    }
+  ]
+}

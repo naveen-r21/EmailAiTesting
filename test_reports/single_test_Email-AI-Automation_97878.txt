@@ -1,0 +1,71 @@
+
+Test Report for Email: test_20250503142336_7598
+===============================================
+
+Email Content:
+-------------
+
+    Hi Emi, I was able to talk with Agent Jennifer and she said that they were open till 5pm tomorrow 
+    for furnished house. So 1pm should be comfortable enough for me. Let's meet at the shuttle bus stop 
+    like we usually do tomorrow at 1pm. I will also provide you a signed copy of the lease agreements 
+    once I get the chance. Thanks, Saaem
+    
+
+Overall Results:
+--------------
+Sentiment: PASS (Expected: positive, Got: positive)
+Summary: FAIL
+Events: FAIL
+
+Performance Metrics:
+------------------
+Precision: 75.0% (Correct fields out of 8 fields the model extracted)
+Recall: 75.0% (Correct fields out of 8 fields that should have been extracted)
+F1-Score: 75.0% (Balance between precision and recall)
+
+Overall Accuracy: 75.0% (Correct fields: 6 out of 8 total fields)
+
+Event Details:
+------------
+
+Event 0:
+  Event name: FAIL (Expected: Meeting with Emi, Got: Meeting)
+  Date: PASS (Expected: 2025-05-04, Got: 2025-05-04)
+  Time: PASS (Expected: 1pm, Got: 1pm)
+  Property Type: PASS (Expected: furnished, Got: furnished)
+  Agent Name: PASS (Expected: Jennifer, Got: Jennifer)
+  Location: PASS (Expected: shuttle bus stop, Got: shuttle bus stop)
+
+Ground Truth Events:
+-----------------
+[
+  {
+    "Event name": "Meeting with Emi",
+    "Date": "2025-05-04",
+    "Time": "1pm",
+    "Property Type": "furnished",
+    "Agent Name": "Jennifer",
+    "Location": "shuttle bus stop"
+  }
+]
+
+Predicted Events:
+--------------
+[
+  {
+    "Event name": "Meeting",
+    "Date": "2025-05-04",
+    "Time": "1pm",
+    "Property Type": "furnished",
+    "Agent Name": "Jennifer",
+    "Location": "shuttle bus stop"
+  }
+]
+
+Ground Truth Summary:
+-----------------
+Meeting with Emi at shuttle bus stop tomorrow at 1pm to discuss a furnished house. Saaem will also provide a signed copy of the lease agreements.
+
+Predicted Summary:
+--------------
+Saaem confirmed a meeting with Emi tomorrow at 1pm at the shuttle bus stop to discuss a furnished house. Additionally, Saaem will provide a signed copy of the lease agreements during the meeting.
